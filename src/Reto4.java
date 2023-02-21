@@ -13,18 +13,39 @@ public class Reto4 {
         System.out.println(name +"Elige piedra papel o tijera ");
         eleccion = lectura.next();
 
-        if(eleccion.equalsIgnoreCase("piedra")&& mano==1){
-            System.out.println("Has elegido piedra has ganado");            
+       
+
+        if(eleccion.equalsIgnoreCase("piedra") && mano==1){
+            System.out.println("Has elegido piedra has quedado empatado en la maquina ");            
         }
+        else if(eleccion.equalsIgnoreCase("piedra")&& mano==2){
+            System.out.println("Has elegido piedra la maquina te gano");
+        }
+        else if(eleccion.equalsIgnoreCase("piedra")&& mano==3){
+            System.out.println("Has elegido piedra has ganado ");
+        }
+
+
         else if(eleccion.equalsIgnoreCase("papel")&& mano==2){
-            System.out.println("Has elegido papel has ganado");
+            System.out.println("Has elegino papel has quedado empatado con la maquina ");
         }
+        else if(eleccion.equalsIgnoreCase("papel")&& mano==3){
+            System.out.println("Has elegido papel has perdido ");
+        }
+        else if(eleccion.equalsIgnoreCase("papel")&& mano==1){
+            System.out.println("Has elegido papel has ganado ");
+        }
+
         else if(eleccion.equalsIgnoreCase("tijera")&& mano==3){
-            System.out.println("Has elegido papel has ganado");
+            System.out.println("Has elegido tijera has quedado empatado con la maquina");
         }
-        else {
-            System.out.println("Has perdido has elegido " + eleccion);
+        else if(eleccion.equalsIgnoreCase("tijera")&& mano==2){
+            System.out.println("Has elgido tijera has ganado");
         }
+        else if(eleccion.equalsIgnoreCase("tijera")&& mano ==1){
+            System.out.println("Has elegido tijera la maquina te gano ");
+        }
+        
         lectura.close();
     }
 }
