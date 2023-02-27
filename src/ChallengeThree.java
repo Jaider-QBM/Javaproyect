@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class CaraoSello {
+public class ChallengeThree {
     public static void main(String[] args) {
         Scanner lectura = new Scanner(System.in);
-            int moneda =(int) (Math.random()*2+1);
+            int currency =(int) (Math.random()*2+1);
         
         String name;
         System.out.println("Hola, Como te llamas? ");
@@ -13,10 +13,10 @@ public class CaraoSello {
         System.out.println(name +" Que vas a elegir cara o sello?");
         eleccion = lectura.nextLine();
 
-        if(eleccion.equals("cara")&& moneda==1){
+        if(eleccion.equals("cara")&& currency==1){
             System.out.println("Has elegido  cara has ganado");
         }
-        else if(eleccion.equals("sello")&& moneda==2){
+        else if(eleccion.equals("sello")&& currency==2){
             System.out.println("Has elegido sello has ganado");
         }
         else{

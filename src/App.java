@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner lectura = new Scanner(System.in);
-        int number1, number2, resultado;
+        int number1, number2, result;
 
         System.out.println("Ingrese un numero");
         number1 = lectura.nextInt();
@@ -11,8 +11,8 @@ public class App {
         System.out.println("Ingresa un numero");
         number2 = lectura.nextInt();
 
-        resultado = number1 + number2;
-        System.out.println("El resultado es " + resultado);
+        result = number1 + number2;
+        System.out.println("El resultado es " + result);
         lectura.nextInt(); //limpieza de buffer
 
         String name;
