@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Entero {
+public class Whole {
     public static void main(String[] args) {
         Scanner lectura = new Scanner(System.in);
         int number;
