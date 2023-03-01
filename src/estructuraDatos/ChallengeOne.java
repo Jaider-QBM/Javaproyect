@@ -15,17 +15,18 @@ public class ChallengeOne {
         System.out.println("Digite la cantidad de notas");
         cantidad = lectura.nextInt();
 
-        int[] nota = new int[cantidad];
+        double[] nota = new double[cantidad];
         
         for(int p=0; p<nota.length; p++){
             System.out.println("Digite las notas de dicha materia ");
-            nota[p] = lectura.nextInt();
+            nota[p] = lectura.nextDouble();
 
             suma = suma + nota[p];
         }
 
         promedio = suma / nota.length;
         resultado = resultado + promedio;
+
         if(resultado<=3.0){
             System.out.println("Reprobaste, el promedio fue de: " + promedio );
         }
